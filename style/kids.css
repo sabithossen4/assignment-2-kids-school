@@ -1,0 +1,220 @@
+/* font start  */
+.quicksand-uniquifier{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}   /* Font End  */
+    /* Share Start  */
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1440px;  
+}
+.display-flex{
+  display: flex;
+}
+.display-grid{
+  display: grid;
+}
+.display-none{
+  display: none;
+}
+/* Share End  */
+    
+/* Header Nav Start  */
+.nav{ 
+  margin: 1.25rem 8.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-title{
+  justify-content: center;
+  align-items: center;
+}
+.nav-name{ 
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+.nav-content a{
+  text-decoration: none;
+  font-size: 1.25;
+  font-weight: 700;
+}
+.nav-content ul{
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-content li{
+  margin-right: 20px;
+}
+.nav-btn{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: orange;
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+}
+.nav-icon{
+  display: none;
+}
+/* Header Nav End  */
+
+/* Banner Start  */
+.banner{
+  margin:0 8.75rem;
+  max-width: 1110px;
+}
+.banner-img{
+  margin-left: 3.125rem;
+}
+.banner-content{
+  margin: 7.625rem 0rem;
+}
+.banner-name{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.banner-text{
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: black;
+  margin: 1.5rem 0;
+}
+.banner-btn{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: black;
+  border-radius: 0.75rem;
+  padding: 10px;
+}
+/* Banner End */
+
+ /* Curriculum Section Start  */
+ .cards{
+  margin: 0 140px;
+  gap: 24px;
+  text-align: center;
+  align-items: center;
+ }
+.center-title{
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 5rem 0;
+}
+.card-name{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.card-text{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card-more{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 2.25rem;
+}
+ /* Curriculum Section End  */
+
+ /* Stories Section Start  */
+ .stories-content{
+  grid-template-columns: repeat(2,1fr);
+ }
+ .stories{
+  width: 100%;
+ }
+ .stories-cards{
+  
+ }
+ .stories-title{
+  font-size: 46px;
+  font-weight: 700;
+  margin: 5rem;
+  text-align: center;
+ }
+ .stories-name{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 58px 0 47px 0;
+ }
+ .stories-text{
+  font-size: 1rem;
+  font-weight: 500;
+ }
+ .card-text{
+  font-size: 1rem;
+  font-weight: 700;
+ }
+ /* Stories Section End  */
+
+ /* Footer Section Start  */
+ .footer{ 
+  width: 100%;
+  height: 310px;
+  background-color: #01ACFD;
+  color: #FFFFFF;
+  justify-content:space-around;
+  align-items: center;
+ } 
+.footer-link a{
+  text-decoration: none;
+  color: #FFFFFF;
+  
+}
+.footer-link li{
+  list-style: none;
+ 
+}
+ /* Footer Section End */
+
+/*Responsive max-width:576px  */
+@media screen and (max-width:576px)
+{
+  /* Header Nav Start  */
+.nav-content,
+.nav-btn,
+.nav-name{
+  display:none;
+}
+.nav{
+  margin: 0.75rem 1rem;
+  display: block;
+}
+.nav-icon{
+  display: block;  
+  width: 1.875rem;
+  height: 1.875rem;  
+}
+.nav-img{
+  width: 2.875rem;
+  height: 2.875rem;
+}
+.nav-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ /* Header Nav End  */
+
+  /* Banner Start  */
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0;    
+  }
+  .banner-content{
+    text-align: center;
+  }
+  /* Banner End  */
+}
