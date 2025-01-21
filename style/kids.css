@@ -10,10 +10,11 @@
   margin: 0; 
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 body{
-  max-width: 1440px;  
-}
+  max-width: 1440px; 
+  border: 2px dashed green;
 .display-flex{
   display: flex;
 }
@@ -99,11 +100,18 @@ body{
 /* Banner End */
 
  /* Curriculum Section Start  */
+ .curriculum{
+  background-color: rgb(243, 176, 31);
+ }
  .cards{
   margin: 0 140px;
   gap: 24px;
   text-align: center;
   align-items: center;
+ 
+ }
+ .card{
+  background-color: aqua;
  }
 .center-title{
   font-size: 2.75rem;
@@ -120,6 +128,9 @@ body{
   font-size: 1rem;
   font-weight: 500;
 }
+.card-img{
+  margin-top: 3.125rem;
+}
 .card-more{
   text-decoration: none;
   font-size: 1rem;
@@ -131,12 +142,22 @@ body{
  /* Stories Section Start  */
  .stories-content{
   grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+  
  }
  .stories{
   width: 100%;
+  background-color: darkgoldenrod;
  }
  .stories-cards{
-  
+  margin: 80px 140px;
+  gap: 18px;
+ }
+ .stories-center{
+  background-color: #01ACFD;
+ }
+ .box{
+  background-color: brown;
  }
  .stories-title{
   font-size: 46px;
@@ -153,29 +174,66 @@ body{
   font-size: 1rem;
   font-weight: 500;
  }
- .card-text{
+ .box-text{
   font-size: 1rem;
   font-weight: 700;
+ }
+ .stories-all{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: black;
+  border-radius: 0.75rem;
+  padding: 10px 60px;
+  border: none;
+  margin-bottom: 60px;  
+ }
+ .view-batn{
+  text-align: center;
  }
  /* Stories Section End  */
 
  /* Footer Section Start  */
  .footer{ 
-  width: 100%;
-  height: 310px;
-  background-color: #01ACFD;
-  color: #FFFFFF;
-  justify-content:space-around;
-  align-items: center;
+  width: 100%;  
+  background-color: #01ACFD;   
  } 
+ .footer-start{  
+  justify-content:space-between;
+  align-items: center;
+  padding: 120px 140px;
+  color: #FFFFFF;
+ }
 .footer-link a{
   text-decoration: none;
-  color: #FFFFFF;
-  
-}
+  color: #FFFFFF; 
+  font-size: 20px;
+  font-weight: 500;
+ }
+ .f-n-about{
+  font-size: 24px;
+  font-weight: 700;
+ }
 .footer-link li{
-  list-style: none;
- 
+  list-style: none; 
+  padding: 10px;
+}
+.footer-link{
+  margin-top: 20px;
+}
+.footer-text{
+  font-size: 20px;
+  font-weight: 400;  
+  max-width: 400px;
+  margin-top: 35px;
+}
+.f-m-title{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.footer-icon img{
+  margin-right: 10px;
 }
  /* Footer Section End */
 
@@ -217,4 +275,15 @@ body{
     text-align: center;
   }
   /* Banner End  */
+
+    /* Footer Start  */
+.footer-start{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+.footer-nav{
+  margin: 2rem 0;
+}
+     /* Footer End  */
 }
