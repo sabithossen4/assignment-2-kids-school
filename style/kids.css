@@ -9,20 +9,31 @@
 *{
   margin: 0; 
   padding: 0;
-  box-sizing: border-box;
-  border: 1px solid red;
+  box-sizing: border-box; 
+  /* border: 1px dashed red; */
 }
 body{
   max-width: 1440px; 
-  border: 2px dashed green;
+  /* border: 2px dashed green ; */
+}
 .display-flex{
   display: flex;
+  background-image: url(/assets/bg.png);
 }
 .display-grid{
   display: grid;
 }
 .display-none{
   display: none;
+}
+.btn{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color:rgba(60, 216, 232, 1);
+  border-radius: 48px;
+  padding:20px;
+  border: none;
 }
 /* Share End  */
     
@@ -142,12 +153,11 @@ body{
  /* Stories Section Start  */
  .stories-content{
   grid-template-columns: repeat(2,1fr);
-  gap: 18px;
-  
+  gap: 18px;  
  }
  .stories{
-  width: 100%;
-  background-color: darkgoldenrod;
+  max-width: 1440px;  
+  background-image: linear-gradient(#ffffff, #FFE2B0);  
  }
  .stories-cards{
   margin: 80px 140px;
@@ -155,28 +165,44 @@ body{
  }
  .stories-center{
   background-color: #01ACFD;
+  border-radius: 16px;
+  border: none;
+  position: relative;
+  background-color: #ffffff;
  }
  .box{
   background-color: brown;
+  border-radius: 16px;
+  border: none;  
+  background-color: #ffffff;
+  max-width: 290px;
+ }
+ .box-1, .box-2,
+ .box-3, .box-4{
+  position: relative;
  }
  .stories-title{
   font-size: 46px;
   font-weight: 700;
-  margin: 5rem;
+  padding-top: 3.75rem;
   text-align: center;
+
  }
  .stories-name{
   font-size: 1.5rem;
   font-weight: 700;
   margin: 58px 0 47px 0;
+  padding: 0 38px;
  }
  .stories-text{
   font-size: 1rem;
   font-weight: 500;
+  padding: 0 38px;
  }
  .box-text{
   font-size: 1rem;
   font-weight: 700;
+  padding: 19px 38px 28px 38px;
  }
  .stories-all{
   font-size: 1.25rem;
@@ -191,11 +217,26 @@ body{
  .view-batn{
   text-align: center;
  }
+ .center-btn{
+ position: absolute; 
+ left: 35px;
+ top: 19.3rem; 
+  }
+  .box-btn{
+    position: absolute;  
+    left: 35px;
+    top: 160px;  
+    padding: 10px 20px;   
+    background-color: #95B226;  
+     }
+     .btn-2{
+      background-color: #5D58F0;
+     }
  /* Stories Section End  */
 
  /* Footer Section Start  */
  .footer{ 
-  width: 100%;  
+  max-width: 100%;  
   background-color: #01ACFD;   
  } 
  .footer-start{  
@@ -275,6 +316,38 @@ body{
     text-align: center;
   }
   /* Banner End  */
+
+   /* Stories Box Start */
+   
+   .stories-center{
+    display: none;
+   }
+   .stories-content{
+    grid-template-columns: repeat(2,1fr);
+    gap: 11px;   
+   }   
+   .stories-cards{
+    justify-content: center;    
+  margin: 80px 16px;
+  gap: 0;
+ }
+   .box-2{
+    display: block;
+   }
+ .box{
+  max-width: 175px;
+ }
+   .box-img{
+    max-width: 175px;
+   }
+   .box-btn{
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 10px;
+    left: 33px;
+    top: 95px;
+   }
+   /* Stories Box End  */
 
     /* Footer Start  */
 .footer-start{
