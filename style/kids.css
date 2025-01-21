@@ -15,10 +15,11 @@
 body{
   max-width: 1440px; 
   /* border: 2px dashed green ; */
+  background-image: url(./assets/bg.png);
 }
 .display-flex{
   display: flex;
-  background-image: url(/assets/bg.png);
+  
 }
 .display-grid{
   display: grid;
@@ -35,11 +36,35 @@ body{
   padding:20px;
   border: none;
 }
+.color-1{
+  color: skyblue;
+}
+.color-2{
+  color: orange;
+}
+.color-3{
+  color: #05D4DF;
+}
+.color-4{
+  color: #5D58EF;
+}
+.color-5{
+  color: #8700FF;
+}
+.linear-1{
+  background-image: linear-gradient(#DEF5FF,#ffffff);
+}
+.linear-2{
+  background-image: linear-gradient(#FFF4DC,#ffffff);
+}
+.linear-3{
+  background-image: linear-gradient(#F2E8FF,#ffffff);
+}
 /* Share End  */
     
 /* Header Nav Start  */
 .nav{ 
-  margin: 1.25rem 8.75rem;
+  margin: 1.25rem 10.7%;
   align-items: center;
   justify-content: space-between;
 }
@@ -111,18 +136,25 @@ body{
 /* Banner End */
 
  /* Curriculum Section Start  */
- .curriculum{
-  background-color: rgb(243, 176, 31);
- }
+
  .cards{
   margin: 0 140px;
   gap: 24px;
   text-align: center;
-  align-items: center;
- 
+  align-items: center; 
  }
- .card{
-  background-color: aqua;
+ .card{ 
+  border-radius: 20px;
+  
+ }
+ .linear-3:hover{
+  box-shadow: 1px 1px 10px  rgb(199, 166, 230);
+ }
+ .linear-2:hover{
+  box-shadow: 1px 1px 10px  rgb(235, 223, 160);
+ }
+ .linear-1:hover{
+  box-shadow: 1px 1px 10px  #94c7dd;
  }
 .center-title{
   font-size: 2.75rem;
@@ -147,16 +179,29 @@ body{
   font-size: 1rem;
   font-weight: 700;
   margin: 2.25rem;
-}
+  }
+  .card-more a{
+    text-decoration: none;   
+  }
+  
  /* Curriculum Section End  */
-
+.icon img{
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  background-color: orange;
+  border-radius: 50%;  
+}
+.icon{  
+  text-align: center;
+}
  /* Stories Section Start  */
  .stories-content{
   grid-template-columns: repeat(2,1fr);
   gap: 18px;  
  }
  .stories{
-  max-width: 1440px;  
+  max-width: 100%;  
   background-image: linear-gradient(#ffffff, #FFE2B0);  
  }
  .stories-cards{
@@ -275,6 +320,10 @@ body{
 }
 .footer-icon img{
   margin-right: 10px;
+  
+}
+.footer-logo img{
+  background-color: #ffffff;
 }
  /* Footer Section End */
 
@@ -288,7 +337,7 @@ body{
   display:none;
 }
 .nav{
-  margin: 0.75rem 1rem;
+  margin: 0.75rem 5%;
   display: block;
 }
 .nav-icon{
@@ -312,15 +361,37 @@ body{
     flex-direction: column-reverse;
     margin: 0;    
   }
+  
   .banner-content{
     text-align: center;
+    margin:20px 5%;
   }
+  .banner-img{
+    margin-left: 10%;
+      }
+      .b-img{
+        max-width: 90%;        
+      }
   /* Banner End  */
+
+  /* Curriculum Section Start  */
+  .cards{
+    flex-direction: column;
+    margin: 0 16px;
+    gap: 12px;     
+   }
+   .center-title{
+    margin: 20px 0;
+   }
+  /* Curriculum Section End  */
 
    /* Stories Box Start */
    
    .stories-center{
     display: none;
+   }
+   .stories-title{
+    
    }
    .stories-content{
     grid-template-columns: repeat(2,1fr);
