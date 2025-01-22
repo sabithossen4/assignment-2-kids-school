@@ -9,13 +9,12 @@
 *{
   margin: 0; 
   padding: 0;
-  box-sizing: border-box;   
-  border: 1px solid red;
+  box-sizing: border-box;     
+  /* border: 1px solid red; */
 }
 body{
-  max-width: 1440px;  
-  background-image: url("../assets/bg.png");  
-  border: 2px dashed green;
+  max-width: 1440px;   
+  /* border: 2px dashed green; */
 }
 .display-flex{
   display: flex;  
@@ -257,17 +256,18 @@ body{
   max-width: 100%;
  }
  .stor-pic{
-  max-width: 100%;
+  /* max-width: 100%; */
  }
  .box{
- 
+  
   border-radius: 16px;
   border: none;  
   background-color: #ffffff;
   max-width: 100%;
  }
+ 
  .box-img{
-  max-width: 100%;
+  /* max-width: 100%; */
  }
  .box-1, .box-2,
  .box-3, .box-4{
