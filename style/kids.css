@@ -14,7 +14,7 @@
 }
 body{
   max-width: 1440px;   
-  /* border: 2px dashed green; */
+  border: 2px dashed green;
 }
 .display-flex{
   display: flex;  
@@ -256,6 +256,7 @@ body{
   max-width: 100%;
  }
  .stor-pic{
+  max-width: 500px;
   /* max-width: 100%; */
  }
  .box{
@@ -267,6 +268,7 @@ body{
  }
  
  .box-img{
+  max-width: 200px;
   /* max-width: 100%; */
  }
  .box-1, .box-2,
@@ -312,13 +314,13 @@ body{
  .center-btn{
  position: absolute; 
  left: 35px;
- top: 19.3rem; 
+ top: 17.7rem; 
   }
   .box-btn{
     position: absolute;  
     left: 35px;
-    top: 160px;  
-    padding: 10px 20px;   
+    top: 112px;  
+    padding: 5px 10px;   
     background-color: #95B226;  
      }
      .btn-2{
